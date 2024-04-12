@@ -1,7 +1,50 @@
 
-# complane
+# Complane
 
 A simple step-by-step website to "complane" to Secretary Pete Buttigieg about bad experiences on US Airlines.
+
+## Implementation Task List
+Using Markdown because JIRA would be overkill
+
+#### App Structure, etc
+- [x] Logo and favicon
+- [ ] nav
+- [ ] next/prev buttons
+- [ ] clean up starter code
+- [ ] router
+- [ ] store
+- [ ] install shadcn
+- [ ] Footer
+  - [ ] hire me info
+  - [ ] paypal link
+
+
+#### Landing Screen
+- [ ] blurb
+
+#### Basic Flight Info Form
+- [ ] Airline Picker
+- [ ] Flight No input
+- [ ] Date Picker
+
+#### Check-in
+- [ ] text input
+
+#### Boarding
+- [ ] text input
+
+#### In-Flight
+- [ ] text input
+
+#### Arrival
+- [ ] text input
+
+#### Send to Pete
+- [ ] write letter
+- [ ] read from store
+- [ ] email link
+
+===
 
 # Vue3 Readme below
 
