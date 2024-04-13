@@ -3,16 +3,18 @@
 
 A simple step-by-step website to "complane" to Secretary Pete Buttigieg about bad experiences on US Airlines.
 
+Hosted at [minnick.co/complane](https://www.minnick.co/complane)
+
 ## Implementation Task List
 Using Markdown because JIRA would be overkill
 
 #### App Structure, etc
 - [x] Logo and favicon
 - [x] Set up deployment to GH pages
-- [ ] install tailwind
-- [ ] add shadcn
+- [x] install tailwind
+- [x] add shadcn
 - [ ] nav
-- [ ] next/prev buttons
+- [ ] get started/resume/start over
 - [ ] clean up starter code
 - [ ] store
 - [ ] Footer
@@ -21,8 +23,8 @@ Using Markdown because JIRA would be overkill
 
 
 #### Landing Screen
-- [ ] view + router
-- [ ] blurb
+- [x] view + router
+- [x] blurb
 - [ ] common complaints
 
 #### Basic Flight Info Form
@@ -33,18 +35,23 @@ Using Markdown because JIRA would be overkill
 
 #### Check-in
 - [ ] view + router
+- [ ] yes/no
 - [ ] text input
 
 #### Boarding
 - [ ] view + router
+- [ ] yes/no
 - [ ] text input
 
 #### In-Flight
-- [ ] view + router
+- [x] view + router
+- [ ] yes/no
 - [ ] text input
+- [ ] unit tests
 
 #### Arrival
 - [ ] view + router
+- [ ] yes/no
 - [ ] text input
 
 #### Send to Pete
@@ -54,49 +61,49 @@ Using Markdown because JIRA would be overkill
 - [ ] email link
 - [ ] copy to clipboard
 
-===
+______________________________________________________________________
 
-# Vue3 Readme below
+## Running the project locally
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+### Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Type Support for `.vue` Imports in TS
+### Type Support for `.vue` Imports in TS
 
 TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-## Customize configuration
+### Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+### Project Setup
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+#### Compile and Hot-Reload for Development
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+#### Type-Check, Compile and Minify for Production
 
 ```sh
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+#### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
 npm run test:unit
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+#### Lint with [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
