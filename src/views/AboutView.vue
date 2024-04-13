@@ -1,5 +1,5 @@
 <script setup>
-import ComplaintStepLayout from '../components/ComplaintStepLayout.vue';
+import ComplaintStepLayout from '../components/ComplaintStepLayout.vue'
 </script>
 
 <template>
