@@ -8,41 +8,51 @@ Using Markdown because JIRA would be overkill
 
 #### App Structure, etc
 - [x] Logo and favicon
+- [x] Set up deployment to GH pages
+- [ ] install tailwind
+- [ ] add shadcn
 - [ ] nav
 - [ ] next/prev buttons
 - [ ] clean up starter code
-- [ ] router
 - [ ] store
-- [ ] install shadcn
 - [ ] Footer
   - [ ] hire me info
   - [ ] paypal link
 
 
 #### Landing Screen
+- [ ] view + router
 - [ ] blurb
+- [ ] common complaints
 
 #### Basic Flight Info Form
+- [ ] view + router
 - [ ] Airline Picker
 - [ ] Flight No input
 - [ ] Date Picker
 
 #### Check-in
+- [ ] view + router
 - [ ] text input
 
 #### Boarding
+- [ ] view + router
 - [ ] text input
 
 #### In-Flight
+- [ ] view + router
 - [ ] text input
 
 #### Arrival
+- [ ] view + router
 - [ ] text input
 
 #### Send to Pete
+- [ ] view + router
 - [ ] write letter
 - [ ] read from store
 - [ ] email link
+- [ ] copy to clipboard
 
 ===
 
