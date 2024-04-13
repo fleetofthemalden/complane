@@ -12,7 +12,9 @@ Using Markdown because JIRA would be overkill
 - [x] Logo and favicon
 - [x] Set up deployment to GH pages
 - [x] install tailwind
-- [x] add shadcn
+- [ ] add shadcn
+  - [x] install
+  - [ ] add forms
 - [ ] nav
 - [ ] get started/resume/start over
 - [ ] clean up starter code
