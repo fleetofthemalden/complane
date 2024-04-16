@@ -1,15 +1,22 @@
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useInflightComplaintStore = defineStore('inflightComplaint', () => {
-  const inFlightComplaints = ref({
-    whatHappened: ''
-  })
+  const hadIssues = ref(false);
+  const whatHappened = ref('');
 
-  function setWhatHappened(whatHappened: string) {
-    inFlightComplaints.value.whatHappened = whatHappened;
+  function setWhatHappened(what: string) {
+    whatHappened.value = what;
   }
   
+  function setHadIssues(had: boolean) {
+    hadIssues.value = had;
+  }
 
-  return { inFlightComplaints, setWhatHappened }
+  function reset() {
+    whatHappened.value = '';
+    hadIssues.value = false;
+  }
+
+  return { hadIssues, whatHappened, setHadIssues, setWhatHappened, reset }
 })

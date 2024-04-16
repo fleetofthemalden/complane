@@ -1,6 +1,6 @@
 <script setup>
-import ComplaintStepLayout from '../components/ComplaintStepLayout.vue'
-import { Button } from '../components/ui/button'
+import ComplaintStepLayout from '@/components/ComplaintStepLayout.vue'
+import { Button } from '@/components/ui/button'
 import { useRouter } from 'vue-router'
 
 const router = useRouter();
