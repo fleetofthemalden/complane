@@ -1,7 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import ViteDocsView from '@/views/ViteDocs.vue';
-import LandingPageView from '@/views/LandingPage.vue';
-import InFlightStepView from '@/views/InFlightStep.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import ViteDocsView from '@/views/ViteDocs.vue'
+import LandingPageView from '@/views/LandingPage.vue'
+import InFlightStepView from '@/views/InFlightStep.vue'
+import SendToPeteView from '@/views/SendToPete.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/in-flight',
       name: 'inFlight',
       component: InFlightStepView
+    },
+    {
+      path: '/send-to-pete',
+      name: 'sendToPete',
+      component: SendToPeteView
     },
     // {
     //   path: '/about',
@@ -30,6 +36,6 @@ const router = createRouter({
       component: ViteDocsView
     }
   ]
-});
+})
 
-export default router;
+export default router

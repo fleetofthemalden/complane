@@ -12,13 +12,15 @@ Using Markdown because JIRA would be overkill
 - [x] Logo and favicon
 - [x] Set up deployment to GH pages
 - [x] install tailwind
-- [ ] add shadcn
+- [x] add shadcn
   - [x] install
-  - [ ] add forms
+  - [x] add forms
 - [ ] nav
-- [ ] get started/resume/start over
+  - [ ] start over
+  - [ ] resume
+  - [ ] prev
+  - [ ] skip
 - [ ] clean up starter code
-- [ ] store
 - [ ] Footer
   - [ ] hire me info
   - [ ] paypal link
@@ -39,26 +41,31 @@ Using Markdown because JIRA would be overkill
 - [ ] view + router
 - [ ] yes/no
 - [ ] text input
+- [ ] store
 
 #### Boarding
 - [ ] view + router
 - [ ] yes/no
 - [ ] text input
+- [ ] store
 
 #### In-Flight
 - [x] view + router
-- [ ] yes/no
-- [ ] text input
+- [x] yes/no
+- [x] text input
+- [x] store
 - [ ] unit tests
 
 #### Arrival
 - [ ] view + router
 - [ ] yes/no
 - [ ] text input
+- [ ] store
 
 #### Send to Pete
-- [ ] view + router
+- [x] view + router
 - [ ] write letter
+- [ ] format letter
 - [ ] read from store
 - [ ] email link
 - [ ] copy to clipboard
@@ -66,8 +73,6 @@ Using Markdown because JIRA would be overkill
 ______________________________________________________________________
 
 ## Running the project locally
-
-This template should help get you started developing with Vue 3 in Vite.
 
 ### Recommended IDE Setup
 
