@@ -64,11 +64,14 @@ Using Markdown because JIRA would be overkill
 
 #### Send to Pete
 - [x] view + router
-- [ ] write letter
+- [x] write letter
 - [ ] format letter
-- [ ] read from store
+- [x] read from store
 - [ ] email link
 - [ ] copy to clipboard
+- [ ] print preview
+- [ ] no problems
+- [ ] Tone toggle: Normal / Joe Lycett
 
 ______________________________________________________________________
 
