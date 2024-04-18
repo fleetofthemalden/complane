@@ -12,13 +12,15 @@ Using Markdown because JIRA would be overkill
 - [x] Logo and favicon
 - [x] Set up deployment to GH pages
 - [x] install tailwind
-- [ ] add shadcn
+- [x] add shadcn
   - [x] install
-  - [ ] add forms
+  - [x] add forms
 - [ ] nav
-- [ ] get started/resume/start over
+  - [ ] start over
+  - [ ] resume
+  - [ ] prev
+  - [ ] skip
 - [ ] clean up starter code
-- [ ] store
 - [ ] Footer
   - [ ] hire me info
   - [ ] paypal link
@@ -34,40 +36,51 @@ Using Markdown because JIRA would be overkill
 - [ ] Airline Picker
 - [ ] Flight No input
 - [ ] Date Picker
+- [ ] store
 
 #### Check-in
 - [ ] view + router
 - [ ] yes/no
 - [ ] text input
+- [ ] store
 
 #### Boarding
 - [ ] view + router
 - [ ] yes/no
 - [ ] text input
+- [ ] store
 
 #### In-Flight
 - [x] view + router
-- [ ] yes/no
-- [ ] text input
+- [x] yes/no
+- [x] text input
+- [x] store
 - [ ] unit tests
 
 #### Arrival
 - [ ] view + router
 - [ ] yes/no
 - [ ] text input
+- [ ] store
 
 #### Send to Pete
-- [ ] view + router
-- [ ] write letter
-- [ ] read from store
-- [ ] email link
+- [x] view + router
+- [x] write letter
+- [x] format letter
+- [x] read from store
+- [ ] email link (partially complete)
+  - [x] v1 email link
+  - [ ] encode email body
+  - [ ] 1 click button
 - [ ] copy to clipboard
+- [ ] print preview
+- [ ] edge cases
+  - [ ] user has no issues with flight
+- [ ] Tone toggle: Normal / Joe Lycett
 
 ______________________________________________________________________
 
 ## Running the project locally
-
-This template should help get you started developing with Vue 3 in Vite.
 
 ### Recommended IDE Setup
 

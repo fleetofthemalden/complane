@@ -5,8 +5,6 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
       <HelloWorld msg="Complane" />
 
@@ -75,7 +73,6 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
 
