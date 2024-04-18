@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ChevronLeft } from 'lucide-vue-next'
 import { useRouter } from 'vue-router'
 import { useForm } from 'vee-validate'
 import { toTypedSchema } from '@vee-validate/zod'
@@ -12,7 +11,6 @@ import { useInflightComplaintStore } from '@/stores/inflightComplaints'
 import { Button } from '@/components/ui/button'
 import {
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,

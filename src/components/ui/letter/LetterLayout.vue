@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import LetterAddress from './LetterAddress.vue'
 
-const todaysDate = new Date().toLocaleDateString('en-us', { year: 'numeric', month: 'short', day: 'numeric' })
+const todaysDate = new Date().toLocaleDateString('en-us', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric'
+})
 // import { defineProps } from 'vue';
 
 // defineProps<{
@@ -15,9 +19,7 @@ const todaysDate = new Date().toLocaleDateString('en-us', { year: 'numeric', mon
       <LetterAddress class="w-fit text-left mx-auto">
         <slot name="senderAddress"></slot>
         <br />
-        {{
-          todaysDate
-        }}
+        {{ todaysDate }}
       </LetterAddress>
     </div>
     <LetterAddress>

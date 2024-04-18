@@ -6,7 +6,6 @@ import { useInflightComplaintStore } from '@/stores/inflightComplaints'
 const inflightComplaints = useInflightComplaintStore()
 </script>
 
-
 <template>
   <LetterLayout>
     <template #senderAddress> TODO: collect user info </template>
@@ -22,8 +21,8 @@ const inflightComplaints = useInflightComplaintStore()
     <LetterParagraph noIndent>Dear Secretary Pete,</LetterParagraph>
 
     <LetterParagraph>
-      Can I call you "Secretary Pete?" I know we have never met, but I feel like I have known you
-      my whole life. "Secretary Pete" just feels right; It feels natural. Just go with it.
+      Can I call you "Secretary Pete?" I know we have never met, but I feel like I have known you my
+      whole life. "Secretary Pete" just feels right; It feels natural. Just go with it.
     </LetterParagraph>
 
     <LetterParagraph>
