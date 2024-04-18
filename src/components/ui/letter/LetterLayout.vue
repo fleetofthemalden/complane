@@ -6,11 +6,6 @@ const todaysDate = new Date().toLocaleDateString('en-us', {
   month: 'short',
   day: 'numeric'
 })
-// import { defineProps } from 'vue';
-
-// defineProps<{
-//   noIndent?: boolean;
-// }>();
 </script>
 
 <template>
