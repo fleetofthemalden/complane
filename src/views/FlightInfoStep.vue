@@ -7,6 +7,7 @@ import * as z from 'zod'
 import ComplaintStepLayout from '@/components/ComplaintStepLayout.vue'
 
 import { useInflightComplaintStore as useFlightInfoStore } from '@/stores/inflightComplaints' // DM todo replace
+// import { useFlightInfoStore } from '@/stores/flightInfo'
 
 import { Button } from '@/components/ui/button'
 import {

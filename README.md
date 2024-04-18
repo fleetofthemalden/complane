@@ -32,7 +32,7 @@ Using Markdown because JIRA would be overkill
 - [ ] common complaints
 
 #### Basic Flight Info Form
-- [ ] view + router
+- [x] view + router
 - [ ] Airline Picker
 - [ ] Flight No input
 - [ ] Date Picker
