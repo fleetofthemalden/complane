@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import LetterAddress from './LetterAddress.vue';
+import LetterAddress from './LetterAddress.vue'
+
+const todaysDate = new Date().toLocaleDateString('en-us', { year: 'numeric', month: 'short', day: 'numeric' })
 // import { defineProps } from 'vue';
 
 // defineProps<{
@@ -9,15 +11,27 @@ import LetterAddress from './LetterAddress.vue';
 
 <template>
   <div>
-    <LetterAddress>
-      <slot name="senderAddress"></slot>
-      <br />
-      {{ new Date().toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}) }}
-    </LetterAddress>
+    <div>
+      <LetterAddress class="w-fit text-left mx-auto">
+        <slot name="senderAddress"></slot>
+        <br />
+        {{
+          todaysDate
+        }}
+      </LetterAddress>
+    </div>
     <LetterAddress>
       <slot name="recipientAddress"></slot>
     </LetterAddress>
-    <slot />
-    <slot name="signature"></slot>
+
+    <slot name="default">
+      <!-- Letter Content -->
+    </slot>
+    <div class="mt-8">
+      <div class="w-fit text-left mx-auto">
+        Sincerely, <br />
+        <slot name="signature"></slot>
+      </div>
+    </div>
   </div>
 </template>

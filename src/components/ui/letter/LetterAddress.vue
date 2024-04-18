@@ -1,8 +1,7 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="mb-6 text-xs">
+  <div class="mb-8 text-xs">
     <slot />
   </div>
 </template>
