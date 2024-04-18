@@ -36,6 +36,7 @@ Using Markdown because JIRA would be overkill
 - [ ] Airline Picker
 - [ ] Flight No input
 - [ ] Date Picker
+- [ ] store
 
 #### Check-in
 - [ ] view + router
@@ -65,12 +66,16 @@ Using Markdown because JIRA would be overkill
 #### Send to Pete
 - [x] view + router
 - [x] write letter
-- [ ] format letter
+- [x] format letter
 - [x] read from store
-- [ ] email link
+- [ ] email link (partially complete)
+  - [x] v1 email link
+  - [ ] encode email body
+  - [ ] 1 click button
 - [ ] copy to clipboard
 - [ ] print preview
-- [ ] no problems
+- [ ] edge cases
+  - [ ] user has no issues with flight
 - [ ] Tone toggle: Normal / Joe Lycett
 
 ______________________________________________________________________
