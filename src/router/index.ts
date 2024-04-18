@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ViteDocsView from '@/views/ViteDocs.vue'
 import LandingPageView from '@/views/LandingPage.vue'
+import FlightInfoStepView from '@/views/FlightInfoStep.vue'
 import InFlightStepView from '@/views/InFlightStep.vue'
 import SendToPeteView from '@/views/SendToPete/SendToPete.vue'
 
@@ -11,6 +12,11 @@ const router = createRouter({
       path: '/',
       name: 'landingPage',
       component: LandingPageView
+    },
+    {
+      path: '/flight-info',
+      name: 'flightInfo',
+      component: FlightInfoStepView
     },
     {
       path: '/in-flight',
