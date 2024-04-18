@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-const goToInFlight = () => router.push('/in-flight')
+const goToNextStep = () => router.push('/flight-info')
 </script>
 
 <template>
@@ -18,7 +18,7 @@ const goToInFlight = () => router.push('/in-flight')
       experiences for all passengers. Let your voice soar with Complane.
     </p>
     <div class="text-right mt-9">
-      <Button @click="goToInFlight">Get Started</Button>
+      <Button @click="goToNextStep">Get Started</Button>
     </div>
   </ComplaintStepLayout>
 </template>
