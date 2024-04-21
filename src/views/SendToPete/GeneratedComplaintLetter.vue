@@ -2,8 +2,10 @@
 import { LetterLayout, LetterParagraph } from '@/components/ui/letter'
 
 import { useInflightComplaintStore } from '@/stores/inflightComplaints'
+import { useFlightInfoStore } from '@/stores/flightInfo'
 
 const inflightComplaints = useInflightComplaintStore()
+const basicFlightInfo = useFlightInfoStore()
 </script>
 
 <template>
@@ -27,7 +29,9 @@ const inflightComplaints = useInflightComplaintStore()
 
     <LetterParagraph>
       Anyway, Secretary Pete, my dude, I am writing to you to express my concerns regarding my
-      recent flight experience. I experienced the following issues:
+      recent flight experience. On {{ basicFlightInfo.dateOfTravel }}, I was on
+      {{ basicFlightInfo.airline }} flight No. {{ basicFlightInfo.flightNumber }}. I experienced the
+      following issues:
     </LetterParagraph>
 
     <LetterParagraph>

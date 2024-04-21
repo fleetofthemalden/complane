@@ -1,15 +1,14 @@
 <script lang="ts" setup>
-import ComplaintStepLayout from '@/components/ComplaintStepLayout.vue'
 import { Button } from '@/components/ui/button'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-const goToInFlight = () => router.push('/in-flight')
+const goToNextStep = () => router.push('/flight-info')
 </script>
 
 <template>
-  <ComplaintStepLayout>
-    <h1 class="text-xl font-semibold mb-2">Welcome to Complane!</h1>
+  <div class="mx-auto w-[460px]">
+    <h1 class="text-xl font-bold">Welcome to Complane!</h1>
     <p>
       Fed up with subpar experiences on US airlines? It's time to make your voice heard. Complane
       provides a platform to help you submit your complaints directly to the Secretary of
@@ -18,7 +17,7 @@ const goToInFlight = () => router.push('/in-flight')
       experiences for all passengers. Let your voice soar with Complane.
     </p>
     <div class="text-right mt-9">
-      <Button @click="goToInFlight">Get Started</Button>
+      <Button @click="goToNextStep">Get Started</Button>
     </div>
-  </ComplaintStepLayout>
+  </div>
 </template>

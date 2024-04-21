@@ -10,16 +10,19 @@ import HelloWorld from './components/HelloWorld.vue'
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/in-flight">In-Flight</RouterLink>
-        <RouterLink to="/docs">docs</RouterLink>
+        <RouterLink to="/">Link 1</RouterLink>
+        <RouterLink to="/">Link 2</RouterLink>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <div class="lg:min-h-screen lg:flex lg:items-center mt-8 lg:mt-0 p-5">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
+/* TODO: clean this up with tailwind */
 header {
   line-height: 1.5;
   max-height: 100vh;

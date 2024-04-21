@@ -15,68 +15,74 @@ Using Markdown because JIRA would be overkill
 - [x] add shadcn
   - [x] install
   - [x] add forms
-- [ ] nav
+- [ ] nav (v1.0.5)
   - [ ] start over
   - [ ] resume
-  - [ ] prev
+  - [x] prev
+  - [x] next
   - [ ] skip
 - [ ] clean up starter code
-- [ ] Footer
+- [ ] Footer (v1.0.6)
   - [ ] hire me info
   - [ ] paypal link
 
 
-#### Landing Screen
+#### Landing Screen (v1.0)
 - [x] view + router
 - [x] blurb
-- [ ] common complaints
+- [ ] common complaints (v1.2)
 
-#### Basic Flight Info Form
-- [ ] view + router
-- [ ] Airline Picker
-- [ ] Flight No input
-- [ ] Date Picker
-- [ ] store
+#### Basic Flight Info Form (v1.0)
+- [x] view + router
+- [x] Airline Picker
+  - [ ] Fix closing behavior (v1.2)
+  - [ ] Add airline images (v1.2)
+- [x] Flight No input
+- [x] Date Picker
+- [x] Format page
+- [x] store
+- [ ] Fix premature form validation (v1.1)
+- [ ] Airport Code To/From (v1.2.5)
 
-#### Check-in
+#### Check-in (v1.2)
 - [ ] view + router
 - [ ] yes/no
 - [ ] text input
 - [ ] store
 
-#### Boarding
+#### Boarding (v1.2)
 - [ ] view + router
 - [ ] yes/no
 - [ ] text input
 - [ ] store
 
-#### In-Flight
+#### In-Flight (v1.0)
 - [x] view + router
 - [x] yes/no
 - [x] text input
 - [x] store
 - [ ] unit tests
 
-#### Arrival
+#### Arrival (v1.2)
 - [ ] view + router
 - [ ] yes/no
 - [ ] text input
 - [ ] store
 
-#### Send to Pete
+#### Send to Pete (v1.0)
 - [x] view + router
 - [x] write letter
 - [x] format letter
 - [x] read from store
-- [ ] email link (partially complete)
-  - [x] v1 email link
-  - [ ] encode email body
-  - [ ] 1 click button
-- [ ] copy to clipboard
-- [ ] print preview
-- [ ] edge cases
+- [x] email link 
+  - [x] v1.0 email link
+  - [ ] encode email body (v1.1)
+  - [ ] 1 click button (v1.1)
+- [ ] copy to clipboard (v1.1)
+- [ ] print preview (v1.1)
+- [ ] edge cases (v1.1)
   - [ ] user has no issues with flight
-- [ ] Tone toggle: Normal / Joe Lycett
+- [ ] Tone toggle: Normal / Joe Lycett (v1.3)
 
 ______________________________________________________________________
 

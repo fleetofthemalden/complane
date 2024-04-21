@@ -1,11 +1,7 @@
 <script setup lang="ts">
 import LetterAddress from './LetterAddress.vue'
 
-const todaysDate = new Date().toLocaleDateString('en-us', {
-  year: 'numeric',
-  month: 'short',
-  day: 'numeric'
-})
+import { todaysDate } from '@/lib/utils'
 </script>
 
 <template>
