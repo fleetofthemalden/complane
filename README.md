@@ -18,7 +18,8 @@ Using Markdown because JIRA would be overkill
 - [ ] nav (v1.0.5)
   - [ ] start over
   - [ ] resume
-  - [ ] prev
+  - [x] prev
+  - [x] next
   - [ ] skip
 - [ ] clean up starter code
 - [ ] Footer (v1.0.6)
@@ -36,10 +37,11 @@ Using Markdown because JIRA would be overkill
 - [x] Airline Picker
   - [ ] Fix closing behavior (v1.2)
   - [ ] Add airline images (v1.2)
-- [ ] Flight No input
-- [ ] Date Picker
-- [ ] Format page
+- [x] Flight No input
+- [x] Date Picker
+- [x] Format page
 - [x] store
+- [ ] Fix premature form validation (v1.1)
 - [ ] Airport Code To/From (v1.2.5)
 
 #### Check-in (v1.2)

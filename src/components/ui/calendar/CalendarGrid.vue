@@ -1,9 +1,9 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { type HTMLAttributes, computed } from 'vue'
-import { DialogTitle, type DialogTitleProps, useForwardProps } from 'radix-vue'
+import { CalendarGrid, type CalendarGridProps, useForwardProps } from 'radix-vue'
 import { cn } from '@/lib/utils'
 
-const props = defineProps<DialogTitleProps & { class?: HTMLAttributes['class'] }>()
+const props = defineProps<CalendarGridProps & { class?: HTMLAttributes['class'] }>()
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props
@@ -15,10 +15,10 @@ const forwardedProps = useForwardProps(delegatedProps)
 </script>
 
 <template>
-  <DialogTitle
+  <CalendarGrid
+    :class="cn('w-full border-collapse space-y-1', props.class)"
     v-bind="forwardedProps"
-    :class="cn('text-lg font-semibold leading-none tracking-tight', props.class)"
   >
     <slot />
-  </DialogTitle>
+  </CalendarGrid>
 </template>

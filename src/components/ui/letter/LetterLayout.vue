@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import LetterAddress from './LetterAddress.vue'
 
-import { todaysDate } from '@/lib/utils';
+import { todaysDate } from '@/lib/utils'
 </script>
 
 <template>

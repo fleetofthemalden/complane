@@ -5,8 +5,12 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const todaysDate = new Date().toLocaleDateString('en-us', {
-  year: 'numeric',
-  month: 'short',
-  day: 'numeric'
-})
+export const formatDate = (date: Date) => {
+  return date.toLocaleDateString('en-us', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  })
+}
+
+export const todaysDate = formatDate(new Date())
