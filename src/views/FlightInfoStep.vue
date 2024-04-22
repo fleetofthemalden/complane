@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { useForm } from 'vee-validate'
+import { useForm, configure } from 'vee-validate'
 import { toTypedSchema } from '@vee-validate/zod'
 import * as z from 'zod'
 
@@ -17,7 +17,7 @@ import { toDate } from 'radix-vue/date'
 import { Calendar as CalendarIcon, Check, ChevronsUpDown } from 'lucide-vue-next'
 
 import { airlines } from '@/lib/airlines'
-import { cn, todaysDate } from '@/lib/utils'
+import { cn } from '@/lib/utils'
 
 import { useFlightInfoStore } from '@/stores/flightInfo'
 
@@ -43,6 +43,18 @@ import { Input } from '@/components/ui/input'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 
 import ComplaintFormStepLayout from '@/components/ComplaintFormStepLayout.vue'
+
+/**
+ * According to the VeeValidate docs, this is supposed to prevent the form from
+ * validating on blur, change, or model update. However, it doesn't seem to work.
+ * https://vee-validate.logaretm.com/v4/guide/components/validation/#customizing-validation-triggers
+ * We will further investigate and fix this behavior in the future.
+ */
+configure({
+  validateOnBlur: false,
+  validateOnChange: false,
+  validateOnModelUpdate: false
+})
 
 const router = useRouter()
 const goToNextStep = () => router.push('/in-flight')
@@ -107,10 +119,14 @@ const onPrevStepClick = () => {
   goToPrevStep()
 }
 
-const clickReset = (e: Event) => {
+const clickReset = () => {
   store.reset()
   resetForm()
 }
+
+// Necessary to close the popover when the date is selected
+const datePickerOpen = ref<boolean>()
+const airlinePickerOpen = ref<boolean>()
 </script>
 
 <template>
@@ -120,7 +136,7 @@ const clickReset = (e: Event) => {
       <FormField name="dateOfTravel">
         <FormItem class="flex flex-col">
           <FormLabel>Date of travel</FormLabel>
-          <Popover>
+          <Popover :open="datePickerOpen" @update:open="(open) => (datePickerOpen = open)">
             <PopoverTrigger as-child>
               <FormControl>
                 <Button
@@ -159,6 +175,7 @@ const clickReset = (e: Event) => {
                         dateOfTravel: ''
                       })
                     }
+                    datePickerOpen = false
                   }
                 "
               />
@@ -173,7 +190,10 @@ const clickReset = (e: Event) => {
           <FormField name="airline">
             <FormItem class="flex flex-col">
               <FormLabel>Airline</FormLabel>
-              <Popover>
+              <Popover
+                :open="airlinePickerOpen"
+                @update:open="(open) => (airlinePickerOpen = open)"
+              >
                 <PopoverTrigger as-child>
                   <FormControl>
                     <Button
@@ -207,6 +227,7 @@ const clickReset = (e: Event) => {
                               setValues({
                                 airline: airline.value
                               })
+                              airlinePickerOpen = false
                             }
                           "
                         >
