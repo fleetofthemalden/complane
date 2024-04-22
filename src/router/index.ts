@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ViteDocsView from '@/views/ViteDocs.vue'
 import LandingPageView from '@/views/LandingPage.vue'
 import FlightInfoStepView from '@/views/FlightInfoStep.vue'
 import InFlightStepView from '@/views/InFlightStep.vue'
@@ -27,7 +26,7 @@ const router = createRouter({
       path: '/send-to-pete',
       name: 'sendToPete',
       component: SendToPeteView
-    },
+    }
     // {
     //   path: '/about',
     //   name: 'about',
@@ -36,11 +35,6 @@ const router = createRouter({
     //   // which is lazy-loaded when the route is visited.
     //   component: () => import('@/views/AboutView.vue')
     // },
-    {
-      path: '/vite-docs',
-      name: 'viteDocs',
-      component: ViteDocsView
-    }
   ]
 })
 
